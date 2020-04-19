@@ -1,6 +1,0 @@
-[0413/232233.672:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
-[0413/233323.465:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff6c3960000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
-[0413/233323.468:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-[0413/233323.468:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffe106a0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
-[0413/233323.468:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\ntdll.dll
-[0415/120350.829:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
