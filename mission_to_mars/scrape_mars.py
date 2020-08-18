@@ -38,7 +38,7 @@ def scrape():
 
 def marsNews():
     import time
-    time.sleep(10)
+    time.sleep(5)
    # browser = init_browser()
     # Visit the NASA Mars News Site
     browser = init_browser()
@@ -63,7 +63,7 @@ def marsImage():
     browser = init_browser()
     image_url='https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
     browser.visit(image_url)
-    time.sleep(10)
+    time.sleep(5)
     html=browser.html
     soup=BeautifulSoup(html, 'html.parser')
     results = soup.find("ul", class_="articles")
@@ -79,7 +79,7 @@ def marsWeather():
     browser = init_browser()
     weather_url='https://twitter.com/marswxreport?lang=en'
     browser.visit(weather_url)
-    time.sleep(10)
+    time.sleep(5)
     twitter=browser.html
     twitter_page=BeautifulSoup(twitter, 'html.parser')
     tweet=twitter_page.find('article')
