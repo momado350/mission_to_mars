@@ -1,4 +1,5 @@
 
+# import dependencies
 from splinter import Browser
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -32,6 +33,7 @@ def scrape():
     final_data["mars_hemisphere"] = marsHem()
         
     return final_data
+    browser.quit
 
 
 def marsNews():
@@ -52,6 +54,7 @@ def marsNews():
     except AttributeError:
         return None, None    
     return output
+    browser.quit
     # ### JPL Mars Space Images - Featured Image
 
     # In[11]:
@@ -68,6 +71,7 @@ def marsImage():
     featured_image_url = 'https://www.jpl.nasa.gov' + href
     #featured_image_url
     return featured_image_url
+    browser.quit
 
 
 def marsWeather():
@@ -85,6 +89,7 @@ def marsWeather():
     mars_weather=mars_weather[4].text
     #print(mars_weather)
     return mars_weather
+    browser.quit
 
     
 def marsFacts():
@@ -97,6 +102,7 @@ def marsFacts():
     mars_facts = mars_data.to_html(header = False, index = False)
     print(mars_facts)
     return mars_facts
+    browser.quit
 
 
 def marsHem():
